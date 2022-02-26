@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E151ECF5-1278-489B-A4B9-1A7C0752FCB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InscripcionOnline</RootNamespace>
+    <AssemblyName>InscripcionOnline</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44368</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>InscripcionOnline.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>InscripcionOnline.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VistaGolf\Paginas\APP\ADM\ADMAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\EnvioLiqMailAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\ListadoCanceladosAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\ListadoInscriptosAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosBorradosAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\ADM\OcultarTorneoAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\AnotacionAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\AyudaAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\CancelacionAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\ABM2APP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\ABMAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\AvisoSessionOutAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\CambioDatosAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\CerrarSessAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\IngresoADMAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\LoginAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\OlvideMiClaveAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Data\RegistrarseAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Envio_MailAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\HomeAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\InfoTorneoAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\InscripcionAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\APP\Tee_TimeAPP.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\ADM.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\EnvioLiqMail.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoCancelados.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoInscriptos.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuarios.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuariosBorrados.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ADM\OcultarTorneo.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Anotacion.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\ArmarEquipo.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Ayuda.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Claves.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Datos.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Cancelacion.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM2.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\AvisoSessionOut.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\CambioDatos.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\CerrarSess.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\IngresoADM.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\Login.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\OlvideMiClave.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Data\Registrarse.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Envio_Mail.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Home.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\InfoTorneo.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Inscripcion.aspx" />
+    <Content Include="VistaGolf\Paginas\InscripcionOnline\Tee_Time.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ADMAPP.aspx.designer.vb">
+      <DependentUpon>ADMAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ADMAPP.aspx.vb">
+      <DependentUpon>ADMAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\EnvioLiqMailAPP.aspx.designer.vb">
+      <DependentUpon>EnvioLiqMailAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\EnvioLiqMailAPP.aspx.vb">
+      <DependentUpon>EnvioLiqMailAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoCanceladosAPP.aspx.designer.vb">
+      <DependentUpon>ListadoCanceladosAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoCanceladosAPP.aspx.vb">
+      <DependentUpon>ListadoCanceladosAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoInscriptosAPP.aspx.designer.vb">
+      <DependentUpon>ListadoInscriptosAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoInscriptosAPP.aspx.vb">
+      <DependentUpon>ListadoInscriptosAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosAPP.aspx.designer.vb">
+      <DependentUpon>ListadoUsuariosAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosAPP.aspx.vb">
+      <DependentUpon>ListadoUsuariosAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosBorradosAPP.aspx.designer.vb">
+      <DependentUpon>ListadoUsuariosBorradosAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\ListadoUsuariosBorradosAPP.aspx.vb">
+      <DependentUpon>ListadoUsuariosBorradosAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\OcultarTorneoAPP.aspx.designer.vb">
+      <DependentUpon>OcultarTorneoAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\ADM\OcultarTorneoAPP.aspx.vb">
+      <DependentUpon>OcultarTorneoAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\AnotacionAPP.aspx.designer.vb">
+      <DependentUpon>AnotacionAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\AnotacionAPP.aspx.vb">
+      <DependentUpon>AnotacionAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\AyudaAPP.aspx.designer.vb">
+      <DependentUpon>AyudaAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\AyudaAPP.aspx.vb">
+      <DependentUpon>AyudaAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\CancelacionAPP.aspx.designer.vb">
+      <DependentUpon>CancelacionAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\CancelacionAPP.aspx.vb">
+      <DependentUpon>CancelacionAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\ABM2APP.aspx.designer.vb">
+      <DependentUpon>ABM2APP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\ABM2APP.aspx.vb">
+      <DependentUpon>ABM2APP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\ABMAPP.aspx.designer.vb">
+      <DependentUpon>ABMAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\ABMAPP.aspx.vb">
+      <DependentUpon>ABMAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\AvisoSessionOutAPP.aspx.designer.vb">
+      <DependentUpon>AvisoSessionOutAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\AvisoSessionOutAPP.aspx.vb">
+      <DependentUpon>AvisoSessionOutAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\CambioDatosAPP.aspx.designer.vb">
+      <DependentUpon>CambioDatosAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\CambioDatosAPP.aspx.vb">
+      <DependentUpon>CambioDatosAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\CerrarSessAPP.aspx.designer.vb">
+      <DependentUpon>CerrarSessAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\CerrarSessAPP.aspx.vb">
+      <DependentUpon>CerrarSessAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\IngresoADMAPP.aspx.designer.vb">
+      <DependentUpon>IngresoADMAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\IngresoADMAPP.aspx.vb">
+      <DependentUpon>IngresoADMAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\LoginAPP.aspx.designer.vb">
+      <DependentUpon>LoginAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\LoginAPP.aspx.vb">
+      <DependentUpon>LoginAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\OlvideMiClaveAPP.aspx.designer.vb">
+      <DependentUpon>OlvideMiClaveAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\OlvideMiClaveAPP.aspx.vb">
+      <DependentUpon>OlvideMiClaveAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\RegistrarseAPP.aspx.designer.vb">
+      <DependentUpon>RegistrarseAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Data\RegistrarseAPP.aspx.vb">
+      <DependentUpon>RegistrarseAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Envio_MailAPP.aspx.designer.vb">
+      <DependentUpon>Envio_MailAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Envio_MailAPP.aspx.vb">
+      <DependentUpon>Envio_MailAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\HomeAPP.aspx.designer.vb">
+      <DependentUpon>HomeAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\HomeAPP.aspx.vb">
+      <DependentUpon>HomeAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\InfoTorneoAPP.aspx.designer.vb">
+      <DependentUpon>InfoTorneoAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\InfoTorneoAPP.aspx.vb">
+      <DependentUpon>InfoTorneoAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\InscripcionAPP.aspx.designer.vb">
+      <DependentUpon>InscripcionAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\InscripcionAPP.aspx.vb">
+      <DependentUpon>InscripcionAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Tee_TimeAPP.aspx.designer.vb">
+      <DependentUpon>Tee_TimeAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\APP\Tee_TimeAPP.aspx.vb">
+      <DependentUpon>Tee_TimeAPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ADM.aspx.designer.vb">
+      <DependentUpon>ADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ADM.aspx.vb">
+      <DependentUpon>ADM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\EnvioLiqMail.aspx.designer.vb">
+      <DependentUpon>EnvioLiqMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\EnvioLiqMail.aspx.vb">
+      <DependentUpon>EnvioLiqMail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoCancelados.aspx.designer.vb">
+      <DependentUpon>ListadoCancelados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoCancelados.aspx.vb">
+      <DependentUpon>ListadoCancelados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoInscriptos.aspx.designer.vb">
+      <DependentUpon>ListadoInscriptos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoInscriptos.aspx.vb">
+      <DependentUpon>ListadoInscriptos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuarios.aspx.designer.vb">
+      <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuarios.aspx.vb">
+      <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuariosBorrados.aspx.designer.vb">
+      <DependentUpon>ListadoUsuariosBorrados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\ListadoUsuariosBorrados.aspx.vb">
+      <DependentUpon>ListadoUsuariosBorrados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\OcultarTorneo.aspx.designer.vb">
+      <DependentUpon>OcultarTorneo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ADM\OcultarTorneo.aspx.vb">
+      <DependentUpon>OcultarTorneo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Anotacion.aspx.designer.vb">
+      <DependentUpon>Anotacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Anotacion.aspx.vb">
+      <DependentUpon>Anotacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ArmarEquipo.aspx.designer.vb">
+      <DependentUpon>ArmarEquipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\ArmarEquipo.aspx.vb">
+      <DependentUpon>ArmarEquipo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Ayuda.aspx.designer.vb">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Ayuda.aspx.vb">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Claves.aspx.designer.vb">
+      <DependentUpon>Claves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Claves.aspx.vb">
+      <DependentUpon>Claves.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Datos.aspx.designer.vb">
+      <DependentUpon>Datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Bajas\Datos.aspx.vb">
+      <DependentUpon>Datos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Cancelacion.aspx.designer.vb">
+      <DependentUpon>Cancelacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Cancelacion.aspx.vb">
+      <DependentUpon>Cancelacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM.aspx.designer.vb">
+      <DependentUpon>ABM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM.aspx.vb">
+      <DependentUpon>ABM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM2.aspx.designer.vb">
+      <DependentUpon>ABM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\ABM2.aspx.vb">
+      <DependentUpon>ABM2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\AvisoSessionOut.aspx.designer.vb">
+      <DependentUpon>AvisoSessionOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\AvisoSessionOut.aspx.vb">
+      <DependentUpon>AvisoSessionOut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\CambioDatos.aspx.designer.vb">
+      <DependentUpon>CambioDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\CambioDatos.aspx.vb">
+      <DependentUpon>CambioDatos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\CerrarSess.aspx.designer.vb">
+      <DependentUpon>CerrarSess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\CerrarSess.aspx.vb">
+      <DependentUpon>CerrarSess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\IngresoADM.aspx.designer.vb">
+      <DependentUpon>IngresoADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\IngresoADM.aspx.vb">
+      <DependentUpon>IngresoADM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\OlvideMiClave.aspx.designer.vb">
+      <DependentUpon>OlvideMiClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\OlvideMiClave.aspx.vb">
+      <DependentUpon>OlvideMiClave.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\Registrarse.aspx.designer.vb">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Data\Registrarse.aspx.vb">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Envio_Mail.aspx.designer.vb">
+      <DependentUpon>Envio_Mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Envio_Mail.aspx.vb">
+      <DependentUpon>Envio_Mail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\InfoTorneo.aspx.designer.vb">
+      <DependentUpon>InfoTorneo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\InfoTorneo.aspx.vb">
+      <DependentUpon>InfoTorneo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Inscripcion.aspx.designer.vb">
+      <DependentUpon>Inscripcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Inscripcion.aspx.vb">
+      <DependentUpon>Inscripcion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Tee_Time.aspx.designer.vb">
+      <DependentUpon>Tee_Time.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGolf\Paginas\InscripcionOnline\Tee_Time.aspx.vb">
+      <DependentUpon>Tee_Time.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49861</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44368/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
